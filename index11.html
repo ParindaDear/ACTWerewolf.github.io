@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--======== UNICONS ========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--======== SWIPER CSS ========-->
+    <link rel="stylesheet" href="">
+
+    <!--======== MAIN CSS ========-->
+    <link rel="stylesheet" href="style11.css">
+
+    <title>Werewolf Website</title>
+</head> 
+<body>
+        <!--BACK-->
+        <div class="hero">
+            <div class="btn-box">
+                <button id="btn1"><i class="uil uil-estate"></i> BACK</button>
+            </div>
+        </div>
+
+
+        <!--======== Work ========-->
+        <section class="work section" id="work">
+            <h2 class="section__title">Characters</h2>
+            
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".villager">Villagers</span>
+                <span class="work__item" data-filter=".werewolf">Werewolves</span>
+                <span class="work__item" data-filter=".neutral">Neutrals</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix villager">
+                    <img src="./img/villager.png" alt="" class="work__img">
+                    <h3 class="work__title">Villager</h3>
+                    <p class="work__team">Villagers</p>
+                    <span class="work__button"> More Info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Villagers</p>
+                        <h3 class="details__title">ชาวบ้าน (Villager)</h3>
+                        <p class="details__description">ชาวบ้านผู้อาศัยอยู่ในหมู่บ้าน<br>ไล่ล่าหามนุษย์หมาป่าให้เจอและโหวตเพื่อกำจัด</p>
+                        <p class="details__info">Role Points : +1</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix werewolf">
+                    <img src="./img/werewolf.png" alt="" class="work__img">
+                    <h3 class="work__title">Werewolf</h3>
+                    <p class="work__team">Werewolves</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Werewolves</p>
+                        <h3 class="details__title">มนุษย์หมาป่า (Werewolf)</h3>
+                        <p class="details__description">ในทุกๆคืนจะตื่นขึ้นมาพร้อมกับมนุษย์หมาป่าตัวอื่นๆและเลือกกำจัดผู้เล่นหนึ่งคน <br>ในช่วงกลางวันต้องเนียนเป็นชาวบ้านที่ระวังหมาป่าอยู่ตลอดเวลา</p>
+                        <p class="details__info">Role Points : -6</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix neutral">
+                    <img src="./img/tanner.png" alt="" class="work__img">
+                    <h3 class="work__title">Tanner</h3>
+                    <p class="work__team">Neutrals</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Neutrals</p>
+                        <h3 class="details__title">ผู้สิ้นหวัง (Tanner)</h3>
+                        <p class="details__description">คุณหมดอาลัยตายอยากกับชีวิต <br>คุณจะชนะทันทีหากถูกกำจัด</p>
+                        <p class="details__info">Role Points : -2</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix werewolf">
+                    <img src="./img/wolf cub.png" alt="" class="work__img">
+                    <h3 class="work__title">Wolf Cub</h3>
+                    <p class="work__team">Werewolves</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Werewolves</p>
+                        <h3 class="details__title">ลูกมนุษย์หมาป่า (Wolf Cub)</h3>
+                        <p class="details__description">ในทุกๆคืนจะตื่นขึ้นมาพร้อมกับมนุษย์หมาป่า <br>แต่ถ้าคุณถูกกำจัด ฝ่ายมนุษย์หมาป่าจะได้กำจัดผู้เล่น 2 คนในคืนถัดไป</p>
+                        <p class="details__info">Role Points : -8</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix villager">
+                    <img src="./img/seer.png" alt="" class="work__img">
+                    <h3 class="work__title">Seer</h3>
+                    <p class="work__team">Villagers</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Villagers</p>
+                        <h3 class="details__title">เทพพยากรณ์ (Seer)</h3>
+                        <p class="details__description">ในทุกคืนสามารถเลือกผู้เล่นหนึ่งคนเพื่อตรวจสอบว่าเป็นมนุษย์หมาป่าหรือไม่</p>
+                        <p class="details__info">Role Points : +7</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix villager">
+                    <img src="./img/spellcaster.png" alt="" class="work__img">
+                    <h3 class="work__title">Spellcaster</h3>
+                    <p class="work__team">Villagers</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Villagers</p>
+                        <h3 class="details__title">จอมเวทย์ (Spellcaster)</h3>
+                        <p class="details__description">ในแต่ละคืนสามารถเลือกผู้เล่นหนึ่งคนให้ห้ามพูดในวันถัดไป</p>
+                        <p class="details__info">Role Points : +1</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix neutral">
+                    <img src="./img/vampire.png" alt="" class="work__img">
+                    <h3 class="work__title">Vampire</h3>
+                    <p class="work__team">Neutrals</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Neutrals</p>
+                        <h3 class="details__title">แวมไพร์ (Vampire)</h3>
+                        <p class="details__description">ในแต่ละคืนสามารถเลือกกำจัดผู้เล่น 1 คน  <br>ผู้เล่นนั้นจะตายเมื่อเริ่มการโหวตในวันถัดไป <br>ซึ่งจะทำให้เสียงโหวตหายไป 1 เสียง</p>
+                        <p class="details__minidescription">มนุษย์หมาป่าไม่สามารถฆ่าแวมไพร์ได้ <br>แต่แวมไพร์สามารถตายจากการโดนโหวตฆ่าได้</p>
+                        <p class="details__info">Role Points : -7</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix villager">
+                    <img src="./img/prince.png" alt="" class="work__img">
+                    <h3 class="work__title">Prince</h3>
+                    <p class="work__team">Villagers</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Villagers</p>
+                        <h3 class="details__title">เจ้าชาย (Prince)</h3>
+                        <p class="details__description">เมื่อถูกกำจัดด้วยการโหวตในช่วงกลางวัน ให้เผยบทบาทออกมาและจะไม่ถูกกำจัด</p>
+                        <p class="details__minidescription">หากถูกหมาป่าฆ่าก็จะตายอยู่ดี</p>
+                        <p class="details__info">Role Points : +3</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix neutral">
+                    <img src="./img/hoodlum.png" alt="" class="work__img">
+                    <h3 class="work__title">Hoodlum</h3>
+                    <p class="work__team">Neutrals</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Neutrals</p>
+                        <h3 class="details__title">อันธพาล (Hoodlum)</h3>
+                        <p class="details__description">ในคืนแรกให้เลือกผู้เล่น 2 คน <br>คุณจะชนะเกมก็ต่อเมื่อคุณยังอยู่ในเกมจนจบเกม <br>และผู้เล่น 2 คนนี้ถูกกำจัดไปแล้ว</p>
+                        <p class="details__info">Role Points : 0</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix villager">
+                    <img src="./img/diseased.png" alt="" class="work__img">
+                    <h3 class="work__title">Diseased</h3>
+                    <p class="work__team">Villagers</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Villagers</p>
+                        <h3 class="details__title">ผู้ป่วยติดเชื้อ (Diseased)</h3>
+                        <p class="details__description">หากคุณถูกมนุษย์หมาป่ากำจัด มนุษย์หมาป่าจะไม่ได้เลือกกำจัดผู้เล่นในคืนถัดไป</p>
+                        <p class="details__info">Role Points : +3</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix villager">
+                    <img src="./img/ghost.png" alt="" class="work__img">
+                    <h3 class="work__title">Ghost</h3>
+                    <p class="work__team">Villagers</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Villagers</p>
+                        <h3 class="details__title">พรายกระซิบ (Ghost)</h3>
+                        <p class="details__description">คุณจะถูกกำจัดตั้งแต่คืนแรก และให้สื่อสารกับ<br>ผู้เล่นที่เหลือด้วยการส่งสารวันละหนึ่งตัวอักษร</p>
+                        <p class="details__info">Role Points : +2</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix werewolf">
+                    <img src="./img/sorceress.png" alt="" class="work__img">
+                    <h3 class="work__title">Sorceress</h3>
+                    <p class="work__team">Werewolves</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Werewolves</p>
+                        <h3 class="details__title">นางปีศาจ (Sorceress)</h3>
+                        <p class="details__description">ในแต่ละคืนสามารถเลือกตรวจสอบผู้เล่น 1 คน<br>ว่าเป็นเทพพยากรณ์หรือไม่ <br>โดยคุณจะเป็นฝ่ายมนุษย์หมาป่า</p>
+                        <p class="details__info">Role Points : -3</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix neutral">
+                    <img src="./img/drunk.png" alt="" class="work__img">
+                    <h3 class="work__title">Drunk</h3>
+                    <p class="work__team">Neutrals</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Neutrals</p>
+                        <h3 class="details__title">คนเมา (Drunk)</h3>
+                        <p class="details__description">คุณเป็นชาวบ้านธรรมดาจนกระทั่งหลังคืนที่ 3 <br>คุณจะสร่างเมาและรู้ตัวว่าจริงๆแล้วคุณเป็นใคร</p>
+                        <p class="details__minidescription">Mod เป็นผู้สุ่มบทบาทมาให้</p>
+                        <p class="details__info">Role Points : +4</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix villager">
+                    <img src="./img/lycan.png" alt="" class="work__img">
+                    <h3 class="work__title">Lycan</h3>
+                    <p class="work__team">Villagers</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Villagers</p>
+                        <h3 class="details__title">ลูกครึ่งมนุษย์หมาป่า (Lycan)</h3>
+                        <p class="details__description">คุณอยู่ฝ่ายชาวบ้าน แต่เทพพยากรณ์จะมองเห็นคุณเป็นมนุษย์หมาป่า</p>
+                        <p class="details__info">Role Points : -1</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix villager">
+                    <img src="./img/bodyguard.png" alt="" class="work__img">
+                    <h3 class="work__title">Bodyguard</h3>
+                    <p class="work__team">Villagers</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Villagers</p>
+                        <h3 class="details__title">บอดี้การ์ด (Bodyguard)</h3>
+                        <p class="details__description">ในแต่ละคืนสามารถเลือกปกป้องผู้เล่น 1 คน <br>และผู้เล่นคนนั้นจะไม่ถูกกำจัดในคืนนั้น</p>
+                        <p class="details__minidescription">เลือกปกป้องตัวเองไม่ได้ <br>และไม่สามารถเลือกปกป้องคนเดิมซ้ำ 2 คืนติด</p>
+                        <p class="details__info">Role Points : +3</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix werewolf">
+                    <img src="./img/minion.png" alt="" class="work__img">
+                    <h3 class="work__title">Minion</h3>
+                    <p class="work__team">Werewolves</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Werewolves</p>
+                        <h3 class="details__title">สมุนรับใช้ (Minion)</h3>
+                        <p class="details__description">คุณจะรู้ว่าใครเป็นมนุษย์หมาป่าบ้าง <br>แต่ไม่ได้ตื่นในเวลากลางคืน <br>ซึ่งถือว่าคุณเป็นฝ่ายมนุษย์หมาป่า</p>
+                        <p class="details__minidescription">ลืมตาเฉพาะคืนแรกเพื่อดูว่ามีใครบ้างที่เป็นหมาป่า</p>
+                        <p class="details__info">Role Points : -6</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix neutral">
+                    <img src="./img/cursed.png" alt="" class="work__img">
+                    <h3 class="work__title">Cursed</h3>
+                    <p class="work__team">Neutrals</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Neutrals</p>
+                        <h3 class="details__title">ผู้ต้องคำสาป (Cursed) </h3>
+                        <p class="details__description">คุณเริ่มเกมด้วยการอยู่ฝ่ายชาวบ้าน <br>เมื่อมนุษย์หมาป่าเลือกกำจัดคุณ คณจะไม่ตายและกลายเป็นมนุษย์หมาป่าแทน</p>
+                        <p class="details__info">Role Points : -3</p>
+                    </div>
+                </div>
+
+                <div class="work__card mix werewolf">
+                    <img src="./img/big bad wolf.png" alt="" class="work__img">
+                    <h3 class="work__title">Big Bad Wolf</h3>
+                    <p class="work__team">Werewolves</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Werewolves</p>
+                        <h3 class="details__title">หมาป่าจอมตะกละ (Big Bad Wolf)</h3>
+                        <p class="details__description">หากตัวละครนี้ยังมีเพื่อนหมาป่าร่วมทีม <br>ทุกๆคืนจะมีผู้เสียชีวิตถึงสองราย</p>
+                        <p class="details__info">Role Points : -9</p>
+                    </div>
+                </div>
+                
+                <div class="work__card mix neutral">
+                    <img src="./img/cult leader.png" alt="" class="work__img">
+                    <h3 class="work__title">Cult Leader</h3>
+                    <p class="work__team">Neutrals</p>
+                    <span class="work__button"> More info 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <p class="details__team">Team - Neutrals</p>
+                        <h3 class="details__title">เจ้าลัทธิ (Cult Leader)</h3>
+                        <p class="details__description">ในแต่ละคืนสามารถเลือกผู้เล่นหนึ่งคนให้เข้าร่วมลัทธิของตน คุณจะชนะเมื่อผู้เล่นทั้งหมดอยู่ในลัทธิ</p>
+                        <p class="details__info">Role Points : +1</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Portfolio popup-->
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="./img/villager.png" alt="" class="portfolio__popup-img">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <div class="portfolio__popup-body">
+                            <h3 class="details__title">ชาวบ้าน (Villager)</h3>
+                        <p class="details__description">ชาวบ้านผู้อาศัยอยู่ในหมู่บ้านไล่ล่าหามนุษย์หมาป่าให้เจอและโหวตเพื่อกำจัด</p>
+                        <p class="details__info">Role Points : +1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======== FOOTER ========-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Werewolf Board Game</h1>
+                        <span class="footer__subtitle">Assumption College Thonburi</span>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; ParindaDear. All right reserved</p>
+            </div>
+        </footer>
+    </main>
+
+    <!--======== SCROLL UP ========-->
+
+    <!--======== MIXITUP FILTER ========-->
+    <script src="mixitup.min.js"></script>
+
+    <!--======== SWIPER JS ========-->
+    <script src=""></script>
+
+    <!--======== MAIN JS ========-->
+    <script src="main11.js"></script>
+</body>
+</html>
